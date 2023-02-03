@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop-2</title>
+<link rel="shortcut icon" href="../../../favicon.png" type="image/x-icon">
+<!-- =======link-boxicon-css======== -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<!-- =======link-bootstrap-css======== -->
+<link rel="stylesheet" href="../../../css/bootstrap.min.css">
+<!-- =======link-custom-css======== -->
+<link rel="stylesheet" href="../../../css/style.css">
+<link rel="stylesheet" href="shop-2.css">
+<!-- =======link-responsive-css======== -->
+<link rel="stylesheet" href="../../../css/responsive.css">
+</head> 
+<body id="body">
+    
+<!-- ====header-section=== -->
+<div class="header-section" id="header">
+    <div class="container">
+        <!-- ====header-link===== -->
+    <div class="header-link flex">
+        <div class="header-left-link">
+            <a href="#">About Us</a>
+            <a href="#">My Account</a>
+            <a href="#">Featured Product</a>
+            <a href="#">Wishlist</a>
+        </div>
+        <div class="header-left-link flex">
+            <div class="order-tacking">
+                <a href="#">Order Tracking</a>
+            </div>
+            <select name="Language">
+                <option value="English">English</option>
+                <option value="German">German</option>
+            </select>
+            <select name="USD">
+                <option value="USD">USD &dollar;</option>
+                <option value="EUR">EUR &euro;</option>
+            </select>
+        </div>
+    </div>
+<!-- =====header-logo,search-box,cart-icon==== -->
+<div class="header-search-box flex">
+    <div class="logo">
+        <img src="../../../images/Trazan-Hax-logo-2.png" alt="logo">
+    </div>
+    <div class="search-box flex">
+        <select name="All">
+            <option value="All">All</option>
+            <option value="Apple">Apple</option>
+            <option value="camera-and-photos">Camera and Photos</option>
+            <option value="cell phones">Cell Phones</option>
+            <option value="headphones">Headphones</option>
+            <option value="smartwatchs">Smartwatchs</option>
+        </select>
+        <input type="text" class="text" placeholder="Search Your Favourite Product">
+        <input type="submit" value="Search" class="submit">
+    </div>
+    <div class="order-related-icon flex">
+        <div class="icon">
+            <a href="../..//login/login.html">
+                <i class='bx bx-user'></i>
+            </a>
+        </div>
+        <div class="icon">
+            <i class='bx bx-heart' ></i>
+            <span>0</span>
+        </div>
+        <div class="icon cart">
+            <i class='bx bx-cart' ></i>
+            <span>0</span>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<!-- ====header-for-small-device==== -->
+<div class="small-device-header">
+    <div class="logo">
+        <img src="../../../images/Trazan-Hax-logo-2.png" alt="logo">
+    </div>
+    <div class="search-box flex">
+        <select name="All">
+            <option value="All">All</option>
+            <option value="Apple">Apple</option>
+            <option value="camera-and-photos">Camera and Photos</option>
+            <option value="cell phones">Cell Phones</option>
+            <option value="headphones">Headphones</option>
+            <option value="smartwatchs">Smartwatchs</option>
+        </select>
+        <input type="text" class="text" placeholder="Search Your Favourite Product">
+        <input type="submit" value="Search" class="submit">
+    </div>
+</div>
+
+
+<!-- ======navigation-menu===== -->
+<div class="nav-container sticky" data-nav-menu>
+    <div class="container">
+        <span class="close-menu" data-menu-close-btn><i class='bx bx-x'></i></span>
+        <nav>
+            <ul class="flex">
+                <li class="nav-item">
+                    <a href="../../home/home.html" class="nav-link"><span>Home</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link flex active" data-product-btn><span>Shop</span>
+                        <span class="nav-link-arrow"><i class='bx bx-chevron-down'></i></span></a>
+                    <div class="page-link" data-stock-product>
+                        <a href="../shop-1/shop.html">Shop-1</a>
+                        <a href="#">Shop-2</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link flex" data-toggle-btn><span data-product-btn class="cetagories">Cetagories</span>
+                    <span class="nav-link-arrow"><i class='bx bx-chevron-down'></i></span></a>
+                    <div class="nav-sub-link-main-box flex" data-toggle-menu>
+                    <div class="nav-sub-link-box">
+                        <div class="sub-link-name flex" data-product-btn>
+                            <div class="link-name">
+                               <p>Electronics:</p>
+                            </div>
+                            <div class="link-icon">
+                                <span class="active"><i class='bx bx-plus' ></i></span>
+                                <span class="disable"><i class='bx bx-minus'></i></span>
+                            </div>
+                        </div>
+                        <div class="sub-link-box" data-stock-product>
+                        <div class="sub-link">
+                            <a href="#"> Computer</a>
+                            <a href="#">Laptop</a>
+                            <a href="#">Smartwatch</a>
+                            <a href="#">Mobile</a>
+                            <a href="#">Headphone</a>
+                        </div>
+                        <div class="sub-product flex">
+                            <div class="img">
+                                <img src="../../../images/headphone.png" alt="">
+                            </div>
+                            <div class="txt">
+                                <h6>Headphone</h6>
+                                <p>Collection</p>
+                                <span>Flat 15% off</span>
+                                <a href="#" class="btn">Shop Now ></a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="nav-sub-link-box">
+                        <div class="sub-link-name flex" data-product-btn>
+                            <div class="link-name">
+                               <p>Men's:</p>
+                            </div>
+                            <div class="link-icon">
+                                <span class="active"><i class='bx bx-plus' ></i></span>
+                                <span class="disable"><i class='bx bx-minus'></i></span>
+                            </div>
+                        </div>
+                        <div class="sub-link-box" data-stock-product>
+                        <div class="sub-link">
+                            <a href="#"> Formal</a>
+                            <a href="#">Casual</a>
+                            <a href="#">Sport</a>
+                            <a href="#">Jacket</a>
+                            <a href="#">Sunglass</a>
+                        </div>
+                        <div class="sub-product flex">
+                            <div class="img">
+                                <img src="../../../images/men.png" alt="">
+                            </div>
+                            <div class="txt">
+                                <h6>Men's</h6>
+                                <p>Fashion</p>
+                                <span>Flat 15% off</span>
+                                <a href="#" class="btn">Shop Now ></a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="nav-sub-link-box">
+                        <div class="sub-link-name flex" data-product-btn>
+                            <div class="link-name">
+                               <p>Women's:</p>
+                            </div>
+                            <div class="link-icon">
+                                <span class="active"><i class='bx bx-plus' ></i></span>
+                                <span class="disable"><i class='bx bx-minus'></i></span>
+                            </div>
+                        </div>
+                        <div class="sub-link-box" data-stock-product>
+                        <div class="sub-link">
+                            <a href="#"> Formal</a>
+                            <a href="#">Casual</a>
+                            <a href="#">Cosmetics</a>
+                            <a href="#">Perfume</a>
+                            <a href="#">Bags</a>
+                        </div>
+                        <div class="sub-product flex">
+                            <div class="img">
+                                <img src="../../../images/women.png" alt="">
+                            </div>
+                            <div class="txt">
+                                <h6>Women's</h6>
+                                <p>Fashion</p>
+                                <span>Flat 15% off</span>
+                                <a href="#" class="btn">Shop Now ></a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="nav-sub-link-box">
+                        <div class="sub-link-name flex" data-product-btn>
+                            <div class="link-name">
+                               <p>Electronics:</p>
+                            </div>
+                            <div class="link-icon">
+                                <span class="active"><i class='bx bx-plus' ></i></span>
+                                <span class="disable"><i class='bx bx-minus'></i></span>
+                            </div>
+                        </div>
+                        <div class="sub-link-box" data-stock-product>
+                        <div class="sub-link">
+                            <a href="#">Desktop</a>
+                            <a href="#">Camera</a>
+                            <a href="#">Tablet</a>
+                            <a href="#">Mouse</a>
+                            <a href="#">Keyboard</a>
+                        </div>
+                        <div class="sub-product flex">
+                            <div class="img">
+                                <img src="../../../images/mouse.png" alt="">
+                            </div>
+                            <div class="txt">
+                                <h6>Mouse</h6>
+                                <p>Collection</p>
+                                <span>Flat 15% off</span>
+                                <a href="#" class="btn">Shop Now ></a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link flex" data-toggle-btn><span>men's</span>
+                        <span class="nav-link-arrow"><i class='bx bx-chevron-down'></i></span></a>
+                    <div class="nav-sub-link-other-box" data-toggle-menu>
+                        <div class="sub-link-name flex" data-product-btn>
+                            <div class="link-name">
+                               <p>Men's:</p>
+                            </div>
+                            <div class="link-icon">
+                                <span class="active"><i class='bx bx-plus' ></i></span>
+                                <span class="disable"><i class='bx bx-minus'></i></span>
+                            </div>
+                        </div>
+                        <div class="sub-link other-sub-link" data-stock-product>
+                            <a href="#">Blazers</a>
+                            <a href="#">T-Shirts</a>
+                            <a href="#">Skirts</a>
+                            <a href="#">Suits</a>
+                            <a href="#">Dresses</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link flex" data-toggle-btn><span>women's</span>
+                        <span class="nav-link-arrow"><i class='bx bx-chevron-down'></i></span></a>
+                    <div class="nav-sub-link-other-box" data-toggle-menu>
+                        <div class="sub-link-name flex" data-product-btn>
+                            <div class="link-name">
+                               <p>Women's:</p>
+                            </div>
+                            <div class="link-icon">
+                                <span class="active"><i class='bx bx-plus' ></i></span>
+                                <span class="disable"><i class='bx bx-minus'></i></span>
+                            </div>
+                        </div>
+                        <div class="sub-link other-sub-link" data-stock-product>
+                            <a href="#">Blazers</a>
+                            <a href="#">T-Shirts</a>
+                            <a href="#">Skirts</a>
+                            <a href="#">Suits</a>
+                            <a href="#">Dresses</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link flex" data-product-btn><span>blog</span>
+                        <span class="nav-link-arrow"><i class='bx bx-chevron-down'></i></span></a>
+                    <div class="page-link" data-stock-product>
+                        <a href="../../blog/blog-1/blog.html">Blog-1</a>
+                        <a href="../../blog/blog-2/blog-2.html">Blog-2</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="../../About/about-us.html" class="nav-link"><span>about us</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="../../contact/contact.html" class="nav-link"><span>contact us</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="../../faq/faq.html" class="nav-link"><span>faq's</span></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<!-- =======mobile-navigation======= -->
+<div class="mobile-navigation flex">
+    <a href="##"><span data-nav-open-btn><i class='bx bx-menu' ></i></span></a>
+    <a href="#"><span><i class='bx bx-shopping-bag' ></i><small>0</small></span></a>
+    <a href="#body"><span><i class='bx bx-home' ></i></span></a>
+    <a href="../../login/login.html"><span><i class='bx bx-user'></i></span></a>
+    <a href="##"><span data-nav-open-btn><i class='bx bx-grid-alt' ></i></span></a>
+</div>
+
+<!-- ====shop-page-start==== -->
+<div class="shop-main-section">
+    <div class="container flex">
+        <!-- =====shop-cetagories===== -->
+    <div class="shop-cetagorie-main-box" data-nav-menu>
+        <span class="close-menu" data-menu-close-btn><i class='bx bx-x'></i></span>
+        <div class="shop-cetagories">
+            <div class="cetagories-name flex" data-product-btn>
+                <span><i class='bx bx-chevron-down'></i></span>
+                <h3>Category</h3>
+            </div>
+            <div class="cetagories-product-name" data-stock-product>
+                <div class="cetagories-product-list">
+                    <input type="checkbox" name="cetagories-name" id="cet-1">
+                    <label for="cet-1">3D Printers (5)</label>
+                </div>
+
+                <div class="cetagories-product-list">
+                    <input type="checkbox" name="cetagories-name" id="cet-2">
+                    <label for="cet-2">Activated Carbon (1)</label>
+                </div>
+
+                <div class="cetagories-product-list">
+                    <input type="checkbox" name="cetagories-name" id="cet-3">
+                    <label for="cet-3">3D Printers (5)</label>
+                </div>
+
+                <div class="cetagories-product-list">
+                    <input type="checkbox" name="cetagories-name" id="cet-4">
+                    <label for="cet-4">Adapters (2)</label>
+                </div>
+
+                <div class="cetagories-product-list">
+                    <input type="checkbox" name="cetagories-name" id="cet-5">
+                    <label for="cet-5"> Air-To-Air (1)</label>
+                </div>
+
+                <div class="cetagories-product-list">
+                    <input type="checkbox" name="cetagories-name" id="cet-6">
+                    <label for="cet-6"> Aluminium (4)</label>
+                </div>
+
+                <div class="cetagories-product-list">
+                    <input type="checkbox" name="cetagories-name" id="cet-7">
+                    <label for="cet-7"> Amplifiers (1)</label>
+                </div>
+
+                <div class="cetagories-product-list">
+                    <input type="checkbox" name="cetagories-name" id="cet-8">
+                    <label for="cet-8"> Analog Watches (3)</label>
+                </div>
+
+                <div class="cetagories-product-list">
+                    <input type="checkbox" name="cetagories-name" id="cet-9">
+                    <label for="cet-9">Appliances (9)</label>
+                </div>
+
+                <div class="cetagories-product-list">
+                    <input type="checkbox" name="cetagories-name" id="cet-10">
+                    <label for="cet-10"> Appliances Materials (10)</label>
+                </div>
+                <a href="#" class="view-more-button">view more +</a>
+            </div>
+        </div>
+
+        <div class="shop-cetagories">
+            <div class="cetagories-name flex" data-product-btn>
+                <span><i class='bx bx-chevron-down'></i></span>
+                <h3>Brand</h3>
+            </div>
+            <div class="cetagories-product-name" data-stock-product>
+                <div class="cetagories-product-list">
+                    <input type="checkbox" name="cetagories-name" id="brand-1">
+                    <label for="brand-1">BraunBraun (16)</label>
+                </div>
+                <div class="cetagories-product-list">
+                    <input type="checkbox" name="cetagories-name" id="brand-2">
+                    <label for="brand-2">Cosmos (7)</label>
+                </div>
+                <div class="cetagories-product-list">
+                    <input type="checkbox" name="cetagories-name" id="brand-3">
+                    <label for="brand-3"> Ein (12)3D Printers (5)</label>
+                </div>
+                <div class="cetagories-product-list">
+                    <input type="checkbox" name="cetagories-name" id="brand-4">
+                    <label for="brand-4"> Lorem (8)</label>
+                </div>
+                <div class="cetagories-product-list">
+                    <input type="checkbox" name="cetagories-name" id="brand-5">
+                    <label for="brand-5"> Monos (6)</label>
+                </div>
+                <div class="cetagories-product-list">
+                    <input type="checkbox" name="cetagories-name" id="brand-6">
+                    <label for="brand-6">Profeus (9)</label>
+                </div>
+                <div class="cetagories-product-list">
+                    <input type="checkbox" name="cetagories-name" id="brand-7">
+                    <label for="brand-7"> Xmos (10)</label>
+                </div>
+                <div class="cetagories-product-list">
+                    <input type="checkbox" name="cetagories-name" id="brand-8">
+                    <label for="brand-8">Yelo (10)</label>
+                </div>
+                <div class="cetagories-product-list">
+                    <input type="checkbox" name="cetagories-name" id="brand-9">
+                    <label for="brand-9">Zeuss (7)</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="shop-cetagories">
+            <div class="cetagories-name flex" data-product-btn>
+                <span><i class='bx bx-chevron-down'></i></span>
+                <h3>Model</h3>
+            </div>
+            <div class="cetagories-product-name" data-stock-product>
+                <div class="cetagories-product-list">
+                    <input type="checkbox" name="cetagories-name" id="model-1">
+                    <label for="model-1"> 128GB (4)</label>
+                </div>
+                <div class="cetagories-product-list">
+                    <input type="checkbox" name="cetagories-name" id="model-2">
+                    <label for="model-2"> 256GB (3)</label>
+                </div>
+                <div class="cetagories-product-list">
+                    <input type="checkbox" name="cetagories-name" id="model-3">
+                    <label for="model-3"> 64GB (3)</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="shop-cetagories">
+            <div class="cetagories-name flex" data-product-btn>
+                <span><i class='bx bx-chevron-down'></i></span>
+                <h3>Color</h3>
+            </div>
+            <div class="cetagories-product-name" data-stock-product>
+                <div class="cetagories-product-list">
+                    <input type="checkbox" name="cetagories-name" id="color-1" class="color-1 color">
+                    <label for="color-1">Black (5)</label>
+                </div>
+                <div class="cetagories-product-list">
+                    <input type="checkbox" name="cetagories-name" id="color-2" class="color-2 color">
+                    <label for="color-2">Blue (2)</label>
+                </div>
+                <div class="cetagories-product-list">
+                    <input type="checkbox" name="cetagories-name" id="color-3" class="color-3 color">
+                    <label for="color-3">Grey (7)</label>
+                </div>
+                <div class="cetagories-product-list">
+                    <input type="checkbox" name="cetagories-name" id="color-4" class="color-4 color">
+                    <label for="color-4">White (3)</label>
+                </div>
+
+                <div class="cetagories-product-list">
+                    <input type="checkbox" name="cetagories-name" id="color-5" class="color-5 color">
+                    <label for="color-5">White (3)</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="shop-cetagories filter-color">
+            <div class="cetagories-name flex" data-product-btn>
+                <span><i class='bx bx-chevron-down'></i></span>
+                <h3>Filter by Price</h3>
+            </div>
+            <div class="filtering-color-des" data-stock-product>
+                <div class="filter-line"></div>
+                <p>Price: &dollar;0 - &dollar;7500</p>
+                <a href="#" class="color-btn">filter ></a>
+            </div>
+        </div>
+
+        <div class="ceta-computer-and-laptop">
+            <img src="images/cetagorie-img.jpg">
+            <div class="ceta-computer-and-laptop-txt">
+                <p>Computers <br>
+                    & Laptops</p>
+                <a href="#">shop now ></a>
+            </div>
+        </div>
+    </div>
+
+        <!-- =====shop-products===== -->
+        <div class="shop-products">
+            <h2 class="shop-product-title">Electronics & Appliances</h2>
+            <p class="shop-product-result">Showing 1 – 16 of 355 results</p>
+            <div class="shop-all-product-box flex">
+
+                <div class="shop-single-product flex">
+                    <div class="single-product-content flex">
+                        <img src="images/product (1).jpg">
+                        <div class="valid-time"><p>NEW</p></div>
+                        <p>High-Airflow CXC-77 Computer Case Blue</p>
+                        <div class="prize"><span>&dollar;3,850</span></div>
+                        <div class="icon-box flex">
+                            <span><i class='bx bx-heart'></i></span>
+                            <span><i class='bx bx-transfer-alt'></i></span>
+                            <span><i class='bx bx-cross'></i></span>
+                        </div>
+                        <span class="widget">WIDGETS</span>
+                    </div>
+                    <div class="single-product-cart">
+                        <div class="cart-txt flex">
+                            <span>add to cart</span>
+                            <i class='bx bx-cart' ></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-single-product flex">
+                    <div class="single-product-content flex">
+                        <img src="images/product (2).jpg">
+                        <p>Robotic Vacuum Cleaner FZP- <br> 5505</p>
+                        <div class="prize"><span>&dollar;440</span></div>
+                        <div class="icon-box flex">
+                            <span><i class='bx bx-heart'></i></span>
+                            <span><i class='bx bx-transfer-alt'></i></span>
+                            <span><i class='bx bx-cross'></i></span>
+                        </div>
+                        <span class="widget">WIDGETS</span>
+                    </div>
+                    <div class="single-product-cart">
+                        <div class="cart-txt flex">
+                            <span>add to cart</span>
+                            <i class='bx bx-cart' ></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-single-product flex">
+                    <div class="single-product-content flex">
+                        <img src="images/product (3).jpg">
+                        <div class="valid-time"><p>NEW</p></div>
+                        <p>Profeus Dewing Tablet S-50 <br> Series</p>
+                        <div class="prize"><span>&dollar;950</span></div>
+                        <div class="icon-box flex">
+                            <span><i class='bx bx-heart'></i></span>
+                            <span><i class='bx bx-transfer-alt'></i></span>
+                            <span><i class='bx bx-cross'></i></span>
+                        </div>
+                        <span class="widget">WIDGETS</span>
+                    </div>
+                    <div class="single-product-cart">
+                        <div class="cart-txt flex">
+                            <span>add to cart</span>
+                            <i class='bx bx-cart' ></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-single-product flex">
+                    <div class="single-product-content flex">
+                        <img src="images/product (4).jpg">
+                        <p>High-Airflow CXC-77 Computer Case Blue</p>
+                        <div class="prize"><span>&dollar;3,850</span></div>
+                        <div class="icon-box flex">
+                            <span><i class='bx bx-heart'></i></span>
+                            <span><i class='bx bx-transfer-alt'></i></span>
+                            <span><i class='bx bx-cross'></i></span>
+                        </div>
+                        <span class="widget">WIDGETS</span>
+                    </div>
+                    <div class="single-product-cart">
+                        <div class="cart-txt flex">
+                            <span>add to cart</span>
+                            <i class='bx bx-cart' ></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-single-product flex">
+                    <div class="single-product-content flex">
+                        <img src="images/product (5).jpg">
+                        <div class="valid-time"><p>NEW</p></div>
+                        <p>High-Airflow CXC-77 Computer Case Blue</p>
+                        <div class="prize"><span>&dollar;3,850</span></div>
+                        <div class="icon-box flex">
+                            <span><i class='bx bx-heart'></i></span>
+                            <span><i class='bx bx-transfer-alt'></i></span>
+                            <span><i class='bx bx-cross'></i></span>
+                        </div>
+                        <span class="widget">WIDGETS</span>
+                    </div>
+                    <div class="single-product-cart">
+                        <div class="cart-txt flex">
+                            <span>add to cart</span>
+                            <i class='bx bx-cart' ></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-single-product flex">
+                    <div class="single-product-content flex">
+                        <img src="images/product (6).jpg">
+                        <p>High-Airflow CXC-77 Computer Case Blue</p>
+                        <div class="prize"><span>&dollar;3,850</span></div>
+                        <div class="icon-box flex">
+                            <span><i class='bx bx-heart'></i></span>
+                            <span><i class='bx bx-transfer-alt'></i></span>
+                            <span><i class='bx bx-cross'></i></span>
+                        </div>
+                        <span class="widget">WIDGETS</span>
+                    </div>
+                    <div class="single-product-cart">
+                        <div class="cart-txt flex">
+                            <span>add to cart</span>
+                            <i class='bx bx-cart' ></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-single-product flex">
+                    <div class="single-product-content flex">
+                        <img src="images/product (7).jpg">
+                        <div class="valid-time"><p>NEW</p></div>
+                        <p>High-Airflow CXC-77 Computer Case Blue</p>
+                        <div class="prize"><span>&dollar;3,850</span></div>
+                        <div class="icon-box flex">
+                            <span><i class='bx bx-heart'></i></span>
+                            <span><i class='bx bx-transfer-alt'></i></span>
+                            <span><i class='bx bx-cross'></i></span>
+                        </div>
+                        <span class="widget">WIDGETS</span>
+                    </div>
+                    <div class="single-product-cart">
+                        <div class="cart-txt flex">
+                            <span>add to cart</span>
+                            <i class='bx bx-cart' ></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-single-product flex">
+                    <div class="single-product-content flex">
+                        <img src="images/product (8).jpg">
+                        <p>High-Airflow CXC-77 Computer Case Blue</p>
+                        <div class="prize"><span>&dollar;3,850</span></div>
+                        <div class="icon-box flex">
+                            <span><i class='bx bx-heart'></i></span>
+                            <span><i class='bx bx-transfer-alt'></i></span>
+                            <span><i class='bx bx-cross'></i></span>
+                        </div>
+                        <span class="widget">WIDGETS</span>
+                    </div>
+                    <div class="single-product-cart">
+                        <div class="cart-txt flex">
+                            <span>add to cart</span>
+                            <i class='bx bx-cart' ></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-single-product flex">
+                    <div class="single-product-content flex">
+                        <img src="images/product (9).jpg">
+                        <p>High-Airflow CXC-77 Computer Case Blue</p>
+                        <div class="prize"><span>&dollar;3,850</span></div>
+                        <div class="icon-box flex">
+                            <span><i class='bx bx-heart'></i></span>
+                            <span><i class='bx bx-transfer-alt'></i></span>
+                            <span><i class='bx bx-cross'></i></span>
+                        </div>
+                        <span class="widget">WIDGETS</span>
+                    </div>
+                    <div class="single-product-cart">
+                        <div class="cart-txt flex">
+                            <span>add to cart</span>
+                            <i class='bx bx-cart' ></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-single-product flex">
+                    <div class="single-product-content flex">
+                        <img src="images/product (10).jpg">
+                        <div class="valid-time"><p>NEW</p></div>
+                        <p>High-Airflow CXC-77 Computer Case Blue</p>
+                        <div class="prize"><span>&dollar;3,850</span></div>
+                        <div class="icon-box flex">
+                            <span><i class='bx bx-heart'></i></span>
+                            <span><i class='bx bx-transfer-alt'></i></span>
+                            <span><i class='bx bx-cross'></i></span>
+                        </div>
+                        <span class="widget">WIDGETS</span>
+                    </div>
+                    <div class="single-product-cart">
+                        <div class="cart-txt flex">
+                            <span>add to cart</span>
+                            <i class='bx bx-cart' ></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-single-product flex">
+                    <div class="single-product-content flex">
+                        <img src="images/product (11).jpg">
+                        <p>High-Airflow CXC-77 Computer Case Blue</p>
+                        <div class="prize"><span>&dollar;3,850</span></div>
+                        <div class="icon-box flex">
+                            <span><i class='bx bx-heart'></i></span>
+                            <span><i class='bx bx-transfer-alt'></i></span>
+                            <span><i class='bx bx-cross'></i></span>
+                        </div>
+                        <span class="widget">WIDGETS</span>
+                    </div>
+                    <div class="single-product-cart">
+                        <div class="cart-txt flex">
+                            <span>add to cart</span>
+                            <i class='bx bx-cart' ></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-single-product flex">
+                    <div class="single-product-content flex">
+                        <img src="images/product (12).jpg">
+                        <p>High-Airflow CXC-77 Computer Case Blue</p>
+                        <div class="prize"><span>&dollar;3,850</span></div>
+                        <div class="icon-box flex">
+                            <span><i class='bx bx-heart'></i></span>
+                            <span><i class='bx bx-transfer-alt'></i></span>
+                            <span><i class='bx bx-cross'></i></span>
+                        </div>
+                        <span class="widget">WIDGETS</span>
+                    </div>
+                    <div class="single-product-cart">
+                        <div class="cart-txt flex">
+                            <span>add to cart</span>
+                            <i class='bx bx-cart' ></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-single-product flex">
+                    <div class="single-product-content flex">
+                        <img src="images/product (13).jpg">
+                        <p>High-Airflow CXC-77 Computer Case Blue</p>
+                        <div class="prize"><span>&dollar;3,850</span></div>
+                        <div class="icon-box flex">
+                            <span><i class='bx bx-heart'></i></span>
+                            <span><i class='bx bx-transfer-alt'></i></span>
+                            <span><i class='bx bx-cross'></i></span>
+                        </div>
+                        <span class="widget">WIDGETS</span>
+                    </div>
+                    <div class="single-product-cart">
+                        <div class="cart-txt flex">
+                            <span>add to cart</span>
+                            <i class='bx bx-cart' ></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-single-product flex">
+                    <div class="single-product-content flex">
+                        <img src="images/product (14).jpg">
+                        <p>High-Airflow CXC-77 Computer Case Blue</p>
+                        <div class="prize"><span>&dollar;3,850</span></div>
+                        <div class="icon-box flex">
+                            <span><i class='bx bx-heart'></i></span>
+                            <span><i class='bx bx-transfer-alt'></i></span>
+                            <span><i class='bx bx-cross'></i></span>
+                        </div>
+                        <span class="widget">WIDGETS</span>
+                    </div>
+                    <div class="single-product-cart">
+                        <div class="cart-txt flex">
+                            <span>add to cart</span>
+                            <i class='bx bx-cart' ></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-single-product flex">
+                    <div class="single-product-content flex">
+                        <img src="images/product (15).jpg">
+                        <div class="valid-time"><p>NEW</p></div>
+                        <p>High-Airflow CXC-77 Computer Case Blue</p>
+                        <div class="prize"><span>&dollar;3,850</span></div>
+                        <div class="icon-box flex">
+                            <span><i class='bx bx-heart'></i></span>
+                            <span><i class='bx bx-transfer-alt'></i></span>
+                            <span><i class='bx bx-cross'></i></span>
+                        </div>
+                        <span class="widget">WIDGETS</span>
+                    </div>
+                    <div class="single-product-cart">
+                        <div class="cart-txt flex">
+                            <span>add to cart</span>
+                            <i class='bx bx-cart' ></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-single-product flex">
+                    <div class="single-product-content flex">
+                        <img src="images/product (16).jpg">
+                        <p>High-Airflow CXC-77 Computer Case Blue</p>
+                        <div class="prize"><span>&dollar;3,850</span></div>
+                        <div class="icon-box flex">
+                            <span><i class='bx bx-heart'></i></span>
+                            <span><i class='bx bx-transfer-alt'></i></span>
+                            <span><i class='bx bx-cross'></i></span>
+                        </div>
+                        <span class="widget">WIDGETS</span>
+                    </div>
+                    <div class="single-product-cart">
+                        <div class="cart-txt flex">
+                            <span>add to cart</span>
+                            <i class='bx bx-cart' ></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="page-counter flex">
+                <p class="active">1</p>
+                <p>2</p>
+                <p>...</p>
+                <p>24</p>
+                <span><i class='bx bx-chevron-right' ></i></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- =====social-and-cetagorie-link===== -->
+<div class="social-and-cetagorie-link">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-3 col-lg-3">
+                <h4>BE IN TOUCH WITH US:</h4>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="mail flex">
+                    <input type="email" placeholder="Enter Your Email">
+                    <button><i class='bx bx-paper-plane' ></i></button>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3">
+                <div class="social-link">
+                    <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    <a href="#"><i class='bx bxl-dribbble' ></i></a>
+                    <a href="#"><i class='bx bxl-pinterest' ></i></a>
+                </div>
+            </div>
+        </div>
+        <h5 class="footer-cetagorie-link"><span>Cetagorie:  </span>Apple │ Apple Watch │ Beats │ Camera │ Game Controller │ HD │ HTC │ 
+HTC One │ IMac │ Ipad │ Ipad 4 16Gb │ Ipad Mini │ Keyboard │ Lenovo │ M8 │ Mackbook Pro M1 │ Mouse │ Samsung │ Samsung Galaxy M11 │ 
+Samsung Galaxy M31 │ Samsung Galaxy S5 - 64gb │ Samsung Galaxy Tab 4 │ Wireless Speaker
+            </h5>
+    </div>
+</div>
+
+<!-- =====footer-section===== -->
+<footer>
+    <div class="container main-container">
+        <div class="row justify-content-between">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="footer-address-part">
+                    <h4 class="footer-title">Contact Us</h4>
+
+                    <div class="phone flex">
+                        <a href="#" class="icon"><i class='bx bx-location-plus' ></i></a>
+                        <p>11100956 Wall Street Washington DC, USA</p>
+                    </div>
+                    <div class="email flex">
+                        <a href="#" class="icon"><i class='bx bx-envelope' ></i></a>
+                        <p>contact@company.com We reply within 24 hours</p>
+                    </div>
+                    <div class="location flex">
+                        <a href="#" class="icon"><i class='bx bx-phone-call'></i></a>
+                        <p> (+84) 0123 456 789 Mon-Fri, 9am until 6pm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+                <div class="footer-account-part">
+                    <h4 class="footer-title">Account</h4>
+                    <a href="#">Shop</a>
+                    <a href="#">Cart</a>
+                    <a href="#">Checkout</a>
+                    <a href="#">My Account</a>
+                    <a href="#">Trems & Conditions</a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="footer-information-part">
+                    <h4 class="footer-title">Information</h4>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Blog</a>
+                    <a href="#">FAQ's</a>
+                    <a href="#">Typrography</a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+                <div class="footer-buy-part">
+                    <h4 class="footer-title">How To Buy</h4>
+                    <a href="#">Making Payments</a>
+                    <a href="#">Delivery Options</a>
+                    <a href="#">Buyer Protection</a>
+                    <a href="#">New User Guide</a>
+                    <a href="#">Partner Ship</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =====footer-copy===== -->
+    <div class="footer-copy">
+        <div class="container flex">
+            <div class="footer-copy-text">© 2020 Made with ZooTemplate. All Rights Reserved.</div>
+            <div class="footer-copy-img"><img src="../../../images/cards.png" alt=""></div>
+        </div>
+    </div>
+    <a href="#body" id="scroll-up" data-scroll><i class='bx bxs-chevron-up'></i></a>
+</footer>
+
+
+
+<!-- =====modal===== -->
+<div class="fixed-display" data-overlay></div>
+
+<!-- ====modal-spiner==== -->
+<div class="spiner-main-box" data-spiner>
+    <div class="spiner-content">
+        <img src="../../../images/spiner-img.png" class="spiner-img">
+        <div class="spin-txt">
+            <h1>New Collection <br> Spring Sale</h1>
+            <p>Enter your full name and email to spin the wheel for a chance big discount</p>
+            <h3>sale offer</h3>
+            <form action="#">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <button><i class='bx bx-paper-plane'></i><span>Spin Now</span></button>
+            </form>
+        </div>
+        <span class="close-spiner" data-spiner-close-btn><i class='bx bx-x'></i></span>
+    </div>
+</div>
+
+
+<!-- =======link-boxicon-js======= -->
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<!-- =======link-custom-js======= -->
+<script src="../../../js/script.js"></script>
+</body>
+</html>

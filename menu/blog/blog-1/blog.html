@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="shortcut icon" href="../../../favicon.png" type="image/x-icon">
+    <!-- =======link-boxicon-css======== -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- css part start  -->
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <!-- css part end  -->
+    <!-- ====other-css==== -->
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="../../../css/responsive.css">
+</head>
+<body id="body">
+    
+<!-- ====header-section=== -->
+<div class="header-section" id="header">
+    <div class="container">
+        <!-- ====header-link===== -->
+    <div class="header-link flex">
+        <div class="header-left-link">
+            <a href="#">About Us</a>
+            <a href="#">My Account</a>
+            <a href="#">Featured Product</a>
+            <a href="#">Wishlist</a>
+        </div>
+        <div class="header-left-link flex">
+            <div class="order-tacking">
+                <a href="#">Order Tracking</a>
+            </div>
+            <select name="Language">
+                <option value="English">English</option>
+                <option value="German">German</option>
+            </select>
+            <select name="USD">
+                <option value="USD">USD &dollar;</option>
+                <option value="EUR">EUR &euro;</option>
+            </select>
+        </div>
+    </div>
+<!-- =====header-logo,search-box,cart-icon==== -->
+<div class="header-search-box flex">
+    <div class="logo">
+        <img src="../../../images/Trazan-Hax-logo-2.png" alt="logo">
+    </div>
+    <div class="search-box flex">
+        <select name="All">
+            <option value="All">All</option>
+            <option value="Apple">Apple</option>
+            <option value="camera-and-photos">Camera and Photos</option>
+            <option value="cell phones">Cell Phones</option>
+            <option value="headphones">Headphones</option>
+            <option value="smartwatchs">Smartwatchs</option>
+        </select>
+        <input type="text" class="text" placeholder="Search Your Favourite Product">
+        <input type="submit" value="Search" class="submit">
+    </div>
+    <div class="order-related-icon flex">
+        <div class="icon">
+            <a href="../../login/login.html">
+                <i class='bx bx-user'></i>
+            </a>
+        </div>
+        <div class="icon">
+            <i class='bx bx-heart' ></i>
+            <span>0</span>
+        </div>
+        <div class="icon cart">
+            <i class='bx bx-cart' ></i>
+            <span>0</span>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<!-- ====header-for-small-device==== -->
+<div class="small-device-header">
+    <div class="logo">
+        <img src="../../../images/Trazan-Hax-logo-2.png" alt="logo">
+    </div>
+    <div class="search-box flex">
+        <select name="All">
+            <option value="All">All</option>
+            <option value="Apple">Apple</option>
+            <option value="camera-and-photos">Camera and Photos</option>
+            <option value="cell phones">Cell Phones</option>
+            <option value="headphones">Headphones</option>
+            <option value="smartwatchs">Smartwatchs</option>
+        </select>
+        <input type="text" class="text" placeholder="Search Your Favourite Product">
+        <input type="submit" value="Search" class="submit">
+    </div>
+</div>
+
+
+<!-- ======navigation-menu===== -->
+<div class="nav-container sticky" data-nav-menu>
+    <div class="container">
+        <span class="close-menu" data-menu-close-btn><i class='bx bx-x'></i></span>
+        <nav>
+            <ul class="flex">
+                <li class="nav-item">
+                    <a href="../../home/home.html" class="nav-link"><span>Home</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link flex" data-product-btn><span>Shop</span>
+                        <span class="nav-link-arrow"><i class='bx bx-chevron-down'></i></span></a>
+                    <div class="page-link" data-stock-product>
+                        <a href="../../shop/shop-1/shop.html">Shop-1</a>
+                        <a href="../../shop/shop-2/shop-2.html">Shop-2</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link flex" data-toggle-btn><span data-product-btn class="cetagories">Cetagories</span>
+                    <span class="nav-link-arrow"><i class='bx bx-chevron-down'></i></span></a>
+                    <div class="nav-sub-link-main-box flex" data-toggle-menu>
+                    <div class="nav-sub-link-box">
+                        <div class="sub-link-name flex" data-product-btn>
+                            <div class="link-name">
+                               <p>Electronics:</p>
+                            </div>
+                            <div class="link-icon">
+                                <span class="active"><i class='bx bx-plus' ></i></span>
+                                <span class="disable"><i class='bx bx-minus'></i></span>
+                            </div>
+                        </div>
+                        <div class="sub-link-box" data-stock-product>
+                        <div class="sub-link">
+                            <a href="#"> Computer</a>
+                            <a href="#">Laptop</a>
+                            <a href="#">Smartwatch</a>
+                            <a href="#">Mobile</a>
+                            <a href="#">Headphone</a>
+                        </div>
+                        <div class="sub-product flex">
+                            <div class="img">
+                                <img src="../../../images/headphone.png" alt="">
+                            </div>
+                            <div class="txt">
+                                <h6>Headphone</h6>
+                                <p>Collection</p>
+                                <span>Flat 15% off</span>
+                                <a href="#" class="btn">Shop Now ></a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="nav-sub-link-box">
+                        <div class="sub-link-name flex" data-product-btn>
+                            <div class="link-name">
+                               <p>Men's:</p>
+                            </div>
+                            <div class="link-icon">
+                                <span class="active"><i class='bx bx-plus' ></i></span>
+                                <span class="disable"><i class='bx bx-minus'></i></span>
+                            </div>
+                        </div>
+                        <div class="sub-link-box" data-stock-product>
+                        <div class="sub-link">
+                            <a href="#"> Formal</a>
+                            <a href="#">Casual</a>
+                            <a href="#">Sport</a>
+                            <a href="#">Jacket</a>
+                            <a href="#">Sunglass</a>
+                        </div>
+                        <div class="sub-product flex">
+                            <div class="img">
+                                <img src="../../../images/men.png" alt="">
+                            </div>
+                            <div class="txt">
+                                <h6>Men's</h6>
+                                <p>Fashion</p>
+                                <span>Flat 15% off</span>
+                                <a href="#" class="btn">Shop Now ></a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="nav-sub-link-box">
+                        <div class="sub-link-name flex" data-product-btn>
+                            <div class="link-name">
+                               <p>Women's:</p>
+                            </div>
+                            <div class="link-icon">
+                                <span class="active"><i class='bx bx-plus' ></i></span>
+                                <span class="disable"><i class='bx bx-minus'></i></span>
+                            </div>
+                        </div>
+                        <div class="sub-link-box" data-stock-product>
+                        <div class="sub-link">
+                            <a href="#"> Formal</a>
+                            <a href="#">Casual</a>
+                            <a href="#">Cosmetics</a>
+                            <a href="#">Perfume</a>
+                            <a href="#">Bags</a>
+                        </div>
+                        <div class="sub-product flex">
+                            <div class="img">
+                                <img src="../../../images/women.png" alt="">
+                            </div>
+                            <div class="txt">
+                                <h6>Women's</h6>
+                                <p>Fashion</p>
+                                <span>Flat 15% off</span>
+                                <a href="#" class="btn">Shop Now ></a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="nav-sub-link-box">
+                        <div class="sub-link-name flex" data-product-btn>
+                            <div class="link-name">
+                               <p>Electronics:</p>
+                            </div>
+                            <div class="link-icon">
+                                <span class="active"><i class='bx bx-plus' ></i></span>
+                                <span class="disable"><i class='bx bx-minus'></i></span>
+                            </div>
+                        </div>
+                        <div class="sub-link-box" data-stock-product>
+                        <div class="sub-link">
+                            <a href="#">Desktop</a>
+                            <a href="#">Camera</a>
+                            <a href="#">Tablet</a>
+                            <a href="#">Mouse</a>
+                            <a href="#">Keyboard</a>
+                        </div>
+                        <div class="sub-product flex">
+                            <div class="img">
+                                <img src="../../../images/mouse.png" alt="">
+                            </div>
+                            <div class="txt">
+                                <h6>Mouse</h6>
+                                <p>Collection</p>
+                                <span>Flat 15% off</span>
+                                <a href="#" class="btn">Shop Now ></a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link flex" data-toggle-btn><span>men's</span>
+                        <span class="nav-link-arrow"><i class='bx bx-chevron-down'></i></span></a>
+                    <div class="nav-sub-link-other-box" data-toggle-menu>
+                        <div class="sub-link-name flex" data-product-btn>
+                            <div class="link-name">
+                               <p>Men's:</p>
+                            </div>
+                            <div class="link-icon">
+                                <span class="active"><i class='bx bx-plus' ></i></span>
+                                <span class="disable"><i class='bx bx-minus'></i></span>
+                            </div>
+                        </div>
+                        <div class="sub-link other-sub-link" data-stock-product>
+                            <a href="#">Blazers</a>
+                            <a href="#">T-Shirts</a>
+                            <a href="#">Skirts</a>
+                            <a href="#">Suits</a>
+                            <a href="#">Dresses</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link flex" data-toggle-btn><span>women's</span>
+                        <span class="nav-link-arrow"><i class='bx bx-chevron-down'></i></span></a>
+                    <div class="nav-sub-link-other-box" data-toggle-menu>
+                        <div class="sub-link-name flex" data-product-btn>
+                            <div class="link-name">
+                               <p>Women's:</p>
+                            </div>
+                            <div class="link-icon">
+                                <span class="active"><i class='bx bx-plus' ></i></span>
+                                <span class="disable"><i class='bx bx-minus'></i></span>
+                            </div>
+                        </div>
+                        <div class="sub-link other-sub-link" data-stock-product>
+                            <a href="#">Blazers</a>
+                            <a href="#">T-Shirts</a>
+                            <a href="#">Skirts</a>
+                            <a href="#">Suits</a>
+                            <a href="#">Dresses</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link flex active" data-product-btn><span>blog</span>
+                        <span class="nav-link-arrow"><i class='bx bx-chevron-down'></i></span></a>
+                    <div class="page-link" data-stock-product>
+                        <a href="#">Blog-1</a>
+                        <a href="../blog-2/blog-2.html">Blog-2</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="../../About/about-us.html" class="nav-link"><span>about us</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="../../contact/contact.html" class="nav-link"><span>contact us</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="../../faq/faq.html" class="nav-link"><span>faq's</span></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<!-- =======mobile-navigation======= -->
+<div class="mobile-navigation flex">
+    <a href="##"><span data-nav-open-btn><i class='bx bx-menu' ></i></span></a>
+    <a href="#"><span><i class='bx bx-shopping-bag' ></i><small>0</small></span></a>
+    <a href="#body"><span><i class='bx bx-home' ></i></span></a>
+    <a href="../../login/login.html"><span><i class='bx bx-user'></i></span></a>
+    <a href="##"><span data-nav-open-btn><i class='bx bx-grid-alt' ></i></span></a>
+</div>
+
+    <!-- blog part start  -->
+    <section id="blog_part">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 ">
+                    <div class="left_side_part" data-nav-menu>
+                        <span class="close-menu" data-menu-close-btn><i class='bx bx-x'></i></span>
+                        <div class="text_part">
+                            <h3>Categories</h3>
+                        </div>
+                        <div class="list_part">
+                                <div class="list_txt">
+                                    <a href="#">Company News  <span>2</span></a>
+                                    <a href="#">Design       <span>5</span></a>
+                                    <a href="#">Electronics <span>7</span></a>
+                                    <a href="#">Lifestyle    <span>3</span></a>
+                                    <a href="#">Social Media <span>4</span></a>
+                                    <a href="#">Tips & Tricks <span>6</span></a>
+                                    <a href="#">Uncategorized <span>9</span></a>
+                                </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="text_part">
+                            <h3>Recent Posts</h3>
+                        </div>
+                        <div class="recent_post_item">
+                            <div class="recent_post">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="img_part">
+                                        <picture>
+                                            <img src="images/small1.jpg" alt="small1.jpg" class="w-100 img-fluid">
+                                        </picture>
+                                    </div>
+                                </div>
+                                    <div class="col-lg-8">
+                                        <div class="recent_txt">
+                                            <a href="#">The 2017 Wine Lover’s Guide to a Kitchen Remodel</a>
+                                        <p>December 23, 2021</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="recent_post">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="img_part">
+                                        <picture>
+                                            <img src="images/small2.jpg" alt="small2.jpg" class="w-100 img-fluid">
+                                        </picture>
+                                    </div>
+                                </div>
+                                    <div class="col-lg-8">
+                                        <div class="recent_txt">
+                                            <a href="#">We Invite You to These Wonderful Wine Tasting Events</a>
+                                        <p>December 23, 2021</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="recent_post last">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="img_part">
+                                        <picture>
+                                            <img src="images/small3.jpg" alt="small3.jpg" class="w-100 img-fluid">
+                                        </picture>
+                                    </div>
+                                </div>
+                                    <div class="col-lg-8">
+                                        <div class="recent_txt">
+                                            <a href="#">Spring Wine Festival at a Vintage Vineyard</a>
+                                        <p>December 23, 2021</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <!-- calender  -->
+                        <div class="text_part">
+                            <h3>Calendar</h3>
+                        </div>
+                        <div class="calender">
+                            <div class="month">      
+                                <ul>
+                                  <li class="prev">&#10094;</li>
+                                  <li class="next">&#10095;</li>
+                                  <li>May
+                                    <span style="font-size:18px">2023</span>
+                                  </li>
+                                </ul>
+                              </div>
+                              
+                              <ul class="weekdays">
+                                <li>M</li>
+                                <li>T</li>
+                                <li>W</li>
+                                <li>T</li>
+                                <li>F</li>
+                                <li>S</li>
+                                <li>S</li>
+                              </ul>
+                              
+                              <ul class="days">  
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                                <li>8</li>
+                                <li>9</li>
+                                <li>10</li>
+                                <li>11</li>
+                                <li>12</li>
+                                <li>13</li>
+                                <li>14</li>
+                                <li>15</li>
+                                <li>16</li>
+                                <li>17</li>
+                                <li>18</li>
+                                <li>19</li>
+                                <li>20</li>
+                                <li>21</li>
+                                <li>22</li>
+                                <li><span class="active">23</span></li>
+                                <li>24</li>
+                                <li>25</li>
+                                <li>26</li>
+                                <li>27</li>
+                                <li>28</li>
+                                <li>29</li>
+                                <li>30</li>
+                                <li>31</li>
+                              </ul>
+                        </div>
+                          <div class="line"></div>
+                        <!-- calender  -->
+                        <div class="text_part">
+                            <h3>Tags</h3>
+                        </div>
+                        <div class="tag_part">
+                            <a href="#">Art</a>
+                            <a href="#">Concrete</a>
+                            <a href="#">Decor</a>
+                            <a href="#">Home</a>
+                            <a href="#">Interior</a>
+                            <a href="#">Living</a>
+                            <a href="#">Office</a>
+                            <a href="#">Renovated</a>
+                            <a href="#">Rent</a>
+                            <a href="#">Wood</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                        <div class="blog_item_part">
+                            <div class="blog_item">
+                                <div class="blog_img">
+                                    <picture>
+                                        <img src="images/img1.jpg" alt="img1.jpg" class="w-100 img-fluid">
+                                    </picture>
+                                </div>
+                                <div class="tag_part1">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <span>By <a href="#" class="admin">admin</a></span>
+                                    <div class="line1"></div>
+                                    <a href="#">Tips & Tricks</a> ,
+                                    <a href="#">Uncategorized</a>
+                                    <div class="line1"></div>
+                                    <a href="#">December 23, 2021</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog_txt">
+                                    <h3>The 2017 Wine Lover’s Guide to a Kitchen Remodel</h3>
+                                    <p>Lorem ipsum dolor sit amet scelerisque orci. Aenean et ex ut elit tincidunt rutrum vitae eleifend metusareil Nunc tincidunt venenatis tellus euismod fermentum. Maecenas sed dapibus eros. Phasellus eu mi metusdajn. Nunc mi nisl, viverra id sollicitudin et, auctor sit amet augue.</p>
+                                </div>
+                                <div class="blog_btn">
+                                    <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                                <div class="line2"></div>
+                            </div>
+
+                            <!-- two  -->
+
+                            <div class="blog_item">
+                                <div class="blog_img">
+                                    <picture>
+                                        <img src="images/img2.jpg" alt="img2.jpg" class="w-100 img-fluid">
+                                    </picture>
+                                </div>
+                                <div class="tag_part1">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <span>By <a href="#" class="admin">admin</a></span>
+                                    <div class="line1"></div>
+                                    <a href="#">Lifestyle</a> ,
+                                    <a href="#">Tips & Tricks</a> ,
+                                    <a href="#">Uncategorized</a>
+                                    <div class="line1"></div>
+                                    <a href="#">December 23, 2021</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog_txt">
+                                    <h3>We Invite You to These Wonderful Wine Tasting Events</h3>
+                                    <p>Lorem ipsum dolor sit amet scelerisque orci. Aenean et ex ut elit tincidunt rutrum vitae eleifend metusareil Nunc tincidunt venenatis tellus euismod fermentum. Maecenas sed dapibus eros. Phasellus eu mi metusdajn. Nunc mi nisl, viverra id sollicitudin et, auctor sit amet augue.</p>
+                                </div>
+                                <div class="blog_btn">
+                                    <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                                <div class="line2"></div>
+                            </div>
+
+                            <!-- three  -->
+
+                            <div class="blog_item">
+                                <div class="blog_img">
+                                    <picture>
+                                        <img src="images/img3.jpg" alt="img3.jpg" class="w-100 img-fluid">
+                                    </picture>
+                                </div>
+                                <div class="tag_part1">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <span>By <a href="#" class="admin">admin</a></span>
+                                    <div class="line1"></div>
+                                    <a href="#">Electronic</a> ,
+                                    <a href="#">Tips & Tricks</a> ,
+                                    <a href="#">Uncategorized</a>
+                                    <div class="line1"></div>
+                                    <a href="#">December 23, 2021</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog_txt">
+                                    <h3>Spring Wine Festival at a Vintage Vineyard</h3>
+                                    <p>Lorem ipsum dolor sit amet scelerisque orci. Aenean et ex ut elit tincidunt rutrum vitae eleifend metusareil Nunc tincidunt venenatis tellus euismod fermentum. Maecenas sed dapibus eros. Phasellus eu mi metusdajn. Nunc mi nisl, viverra id sollicitudin et, auctor sit amet augue.</p>
+                                </div>
+                                <div class="blog_btn">
+                                    <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                                <div class="line2"></div>
+                            </div> 
+
+                            <!-- four  -->
+                            <div class="blog_item">
+                                <div class="blog_img">
+                                    <picture>
+                                        <img src="images/img4.jpg" alt="img4.jpg" class="w-100 img-fluid">
+                                    </picture>
+                                </div>
+                                <div class="tag_part1">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <span>By <a href="#" class="admin">admin</a></span>
+                                    <div class="line1"></div>
+                                    <a href="#">Company News</a> ,
+                                    <a href="#">Social Media</a> ,
+                                    <a href="#">Uncategorized</a>
+                                    <div class="line1"></div>
+                                    <a href="#">October 18, 2021</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog_txt">
+                                    <h3>Spring Wine Festival at a Vintage Vineyard</h3>
+                                    <p>Lorem ipsum dolor sit amet scelerisque orci. Aenean et ex ut elit tincidunt rutrum vitae eleifend metusareil Nunc tincidunt venenatis tellus euismod fermentum. Maecenas sed dapibus eros. Phasellus eu mi metusdajn. Nunc mi nisl, viverra id sollicitudin et, auctor sit amet augue.</p>
+                                </div>
+                                <div class="blog_btn">
+                                    <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                                <div class="line2"></div>
+                            </div>
+
+                            <!-- five  -->
+                            <div class="blog_item">
+                                <div class="blog_img">
+                                    <picture>
+                                        <img src="images/img5.jpg" alt="img5.jpg" class="w-100 img-fluid">
+                                    </picture>
+                                </div>
+                                <div class="tag_part1">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <span>By <a href="#" class="admin">admin</a></span>
+                                    <div class="line1"></div>
+                                    <a href="#">Design</a> ,
+                                    <a href="#">Life Style</a> ,
+                                    <a href="#">Uncategorized</a>
+                                    <div class="line1"></div>
+                                    <a href="#">October 18, 2021</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog_txt">
+                                    <h3>We Invite You to These Wonderful Wine Tasting Events</h3>
+                                    <p>Lorem ipsum dolor sit amet scelerisque orci. Aenean et ex ut elit tincidunt rutrum vitae eleifend metusareil Nunc tincidunt venenatis tellus euismod fermentum. Maecenas sed dapibus eros. Phasellus eu mi metusdajn. Nunc mi nisl, viverra id sollicitudin et, auctor sit amet augue.</p>
+                                </div>
+                                <div class="blog_btn">
+                                    <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                                <div class="line2"></div>
+                            </div>
+
+                            <!-- six  -->
+                            <div class="blog_item">
+                                <div class="blog_img">
+                                    <picture>
+                                        <img src="images/img6.jpg" alt="img6.jpg" class="w-100 img-fluid">
+                                    </picture>
+                                </div>
+                                <div class="tag_part1">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <span>By <a href="#" class="admin">admin</a></span>
+                                    <div class="line1"></div>
+                                    <a href="#">Design</a> ,
+                                    <a href="#">Company News</a> ,
+                                    <a href="#">Uncategorized</a>
+                                    <div class="line1"></div>
+                                    <a href="#">October 18, 2021</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog_txt">
+                                    <h3>Spring Wine Festival at a Vintage Vineyard</h3>
+                                    <p>Lorem ipsum dolor sit amet scelerisque orci. Aenean et ex ut elit tincidunt rutrum vitae eleifend metusareil Nunc tincidunt venenatis tellus euismod fermentum. Maecenas sed dapibus eros. Phasellus eu mi metusdajn. Nunc mi nisl, viverra id sollicitudin et, auctor sit amet augue.</p>
+                                </div>
+                                <div class="blog_btn">
+                                    <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                                <div class="line2"></div>
+
+                                <div class="btn_part">
+                                    <a href="#" class="active">1</a>
+                                    <a href="#">2</a>
+                                    <a href="#">NEXT <i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blog part end  -->
+
+<!-- =====social-and-cetagorie-link===== -->
+<div class="social-and-cetagorie-link">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-3 col-lg-3">
+                <h4>BE IN TOUCH WITH US:</h4>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="mail flex">
+                    <input type="email" placeholder="Enter Your Email">
+                    <button><i class='bx bx-paper-plane' ></i></button>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3">
+                <div class="social-link">
+                    <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    <a href="#"><i class='bx bxl-dribbble' ></i></a>
+                    <a href="#"><i class='bx bxl-pinterest' ></i></a>
+                </div>
+            </div>
+        </div>
+        <h5 class="footer-cetagorie-link"><span>Cetagorie:  </span>Apple │ Apple Watch │ Beats │ Camera │ Game Controller │ HD │ HTC │ 
+HTC One │ IMac │ Ipad │ Ipad 4 16Gb │ Ipad Mini │ Keyboard │ Lenovo │ M8 │ Mackbook Pro M1 │ Mouse │ Samsung │ Samsung Galaxy M11 │ 
+Samsung Galaxy M31 │ Samsung Galaxy S5 - 64gb │ Samsung Galaxy Tab 4 │ Wireless Speaker
+            </h5>
+    </div>
+</div>
+
+<!-- =====footer-section===== -->
+<footer>
+    <div class="container main-container">
+        <div class="row justify-content-between">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="footer-address-part">
+                    <h4 class="footer-title">Contact Us</h4>
+
+                    <div class="phone flex">
+                        <a href="#" class="icon"><i class='bx bx-location-plus' ></i></a>
+                        <p>11100956 Wall Street Washington DC, USA</p>
+                    </div>
+                    <div class="email flex">
+                        <a href="#" class="icon"><i class='bx bx-envelope' ></i></a>
+                        <p>contact@company.com We reply within 24 hours</p>
+                    </div>
+                    <div class="location flex">
+                        <a href="#" class="icon"><i class='bx bx-phone-call'></i></a>
+                        <p> (+84) 0123 456 789 Mon-Fri, 9am until 6pm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+                <div class="footer-account-part">
+                    <h4 class="footer-title">Account</h4>
+                    <a href="#">Shop</a>
+                    <a href="#">Cart</a>
+                    <a href="#">Checkout</a>
+                    <a href="#">My Account</a>
+                    <a href="#">Trems & Conditions</a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="footer-information-part">
+                    <h4 class="footer-title">Information</h4>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Blog</a>
+                    <a href="#">FAQ's</a>
+                    <a href="#">Typrography</a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+                <div class="footer-buy-part">
+                    <h4 class="footer-title">How To Buy</h4>
+                    <a href="#">Making Payments</a>
+                    <a href="#">Delivery Options</a>
+                    <a href="#">Buyer Protection</a>
+                    <a href="#">New User Guide</a>
+                    <a href="#">Partner Ship</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =====footer-copy===== -->
+    <div class="footer-copy">
+        <div class="container flex">
+            <div class="footer-copy-text">© 2020 Made with ZooTemplate. All Rights Reserved.</div>
+            <div class="footer-copy-img"><img src="../../../images/cards.png" alt=""></div>
+        </div>
+    </div>
+    <a href="#body" id="scroll-up" data-scroll><i class='bx bxs-chevron-up'></i></a>
+</footer>
+
+<!-- =====modal===== -->
+<div class="fixed-display" data-overlay></div>
+
+<!-- ====modal-spiner==== -->
+<div class="spiner-main-box" data-spiner>
+    <div class="spiner-content">
+        <img src="../../../images/spiner-img.png" class="spiner-img">
+        <div class="spin-txt">
+            <h1>New Collection <br> Spring Sale</h1>
+            <p>Enter your full name and email to spin the wheel for a chance big discount</p>
+            <h3>sale offer</h3>
+            <form action="#">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <button><i class='bx bx-paper-plane'></i><span>Spin Now</span></button>
+            </form>
+        </div>
+        <span class="close-spiner" data-spiner-close-btn><i class='bx bx-x'></i></span>
+    </div>
+</div>
+
+
+<!-- =======link-boxicon-js======= -->
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<!-- script part start  -->
+<script src="../../../js/script.js"></script>
+<!-- script part end  -->
+</body>
+</html>

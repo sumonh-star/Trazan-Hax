@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact-Us</title>
+    <!-- =======link-boxicon-css======== -->
+    <link rel="shortcut icon" href="../../favicon.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/contact.css">
+      <link rel="stylesheet" href="css/media.css">
+      <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+</head>
+<body id="body">
+
+<!-- ====header-section=== -->
+<div class="header-section" id="header">
+    <div class="container">
+        <!-- ====header-link===== -->
+    <div class="header-link flex">
+        <div class="header-left-link">
+            <a href="#">About Us</a>
+            <a href="#">My Account</a>
+            <a href="#">Featured Product</a>
+            <a href="#">Wishlist</a>
+        </div>
+        <div class="header-left-link flex">
+            <div class="order-tacking">
+                <a href="#">Order Tracking</a>
+            </div>
+            <select name="Language">
+                <option value="English">English</option>
+                <option value="German">German</option>
+            </select>
+            <select name="USD">
+                <option value="USD">USD &dollar;</option>
+                <option value="EUR">EUR &euro;</option>
+            </select>
+        </div>
+    </div>
+<!-- =====header-logo,search-box,cart-icon==== -->
+<div class="header-search-box flex">
+    <div class="logo">
+        <img src="../../images/Trazan-Hax-logo-2.png" alt="logo">
+    </div>
+    <div class="search-box flex">
+        <select name="All">
+            <option value="All">All</option>
+            <option value="Apple">Apple</option>
+            <option value="camera-and-photos">Camera and Photos</option>
+            <option value="cell phones">Cell Phones</option>
+            <option value="headphones">Headphones</option>
+            <option value="smartwatchs">Smartwatchs</option>
+        </select>
+        <input type="text" class="text" placeholder="Search Your Favourite Product">
+        <input type="submit" value="Search" class="submit">
+    </div>
+    <div class="order-related-icon flex">
+        <div class="icon">
+            <a href="../login/login.html">
+                <i class='bx bx-user'></i>
+            </a>
+        </div>
+        <div class="icon">
+            <i class='bx bx-heart' ></i>
+            <span>0</span>
+        </div>
+        <div class="icon cart">
+            <i class='bx bx-cart' ></i>
+            <span>0</span>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<!-- ====header-for-small-device==== -->
+<div class="small-device-header">
+    <div class="logo">
+        <img src="../../images/Trazan-Hax-logo-2.png" alt="logo">
+    </div>
+    <div class="search-box flex">
+        <select name="All">
+            <option value="All">All</option>
+            <option value="Apple">Apple</option>
+            <option value="camera-and-photos">Camera and Photos</option>
+            <option value="cell phones">Cell Phones</option>
+            <option value="headphones">Headphones</option>
+            <option value="smartwatchs">Smartwatchs</option>
+        </select>
+        <input type="text" class="text" placeholder="Search Your Favourite Product">
+        <input type="submit" value="Search" class="submit">
+    </div>
+</div>
+
+
+<!-- ======navigation-menu===== -->
+<div class="nav-container sticky" data-nav-menu>
+    <div class="container">
+        <span class="close-menu" data-menu-close-btn><i class='bx bx-x'></i></span>
+        <nav>
+            <ul class="flex">
+                <li class="nav-item">
+                    <a href="../home/home.html" class="nav-link"><span>Home</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link flex" data-product-btn><span>Shop</span>
+                        <span class="nav-link-arrow"><i class='bx bx-chevron-down'></i></span></a>
+                    <div class="page-link" data-stock-product>
+                        <a href="../shop/shop-1/shop.html">Shop-1</a>
+                        <a href="../shop/shop-2/shop-2.html">Shop-2</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link flex" data-toggle-btn><span data-product-btn class="cetagories">Cetagories</span>
+                    <span class="nav-link-arrow"><i class='bx bx-chevron-down'></i></span></a>
+                    <div class="nav-sub-link-main-box flex" data-toggle-menu>
+                    <div class="nav-sub-link-box">
+                        <div class="sub-link-name flex" data-product-btn>
+                            <div class="link-name">
+                               <p>Electronics:</p>
+                            </div>
+                            <div class="link-icon">
+                                <span class="active"><i class='bx bx-plus' ></i></span>
+                                <span class="disable"><i class='bx bx-minus'></i></span>
+                            </div>
+                        </div>
+                        <div class="sub-link-box" data-stock-product>
+                        <div class="sub-link">
+                            <a href="#"> Computer</a>
+                            <a href="#">Laptop</a>
+                            <a href="#">Smartwatch</a>
+                            <a href="#">Mobile</a>
+                            <a href="#">Headphone</a>
+                        </div>
+                        <div class="sub-product flex">
+                            <div class="img">
+                                <img src="../../images/headphone.png" alt="">
+                            </div>
+                            <div class="txt">
+                                <h6>Headphone</h6>
+                                <p>Collection</p>
+                                <span>Flat 15% off</span>
+                                <a href="#" class="btn">Shop Now ></a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="nav-sub-link-box">
+                        <div class="sub-link-name flex" data-product-btn>
+                            <div class="link-name">
+                               <p>Men's:</p>
+                            </div>
+                            <div class="link-icon">
+                                <span class="active"><i class='bx bx-plus' ></i></span>
+                                <span class="disable"><i class='bx bx-minus'></i></span>
+                            </div>
+                        </div>
+                        <div class="sub-link-box" data-stock-product>
+                        <div class="sub-link">
+                            <a href="#"> Formal</a>
+                            <a href="#">Casual</a>
+                            <a href="#">Sport</a>
+                            <a href="#">Jacket</a>
+                            <a href="#">Sunglass</a>
+                        </div>
+                        <div class="sub-product flex">
+                            <div class="img">
+                                <img src="../../images/men.png" alt="">
+                            </div>
+                            <div class="txt">
+                                <h6>Men's</h6>
+                                <p>Fashion</p>
+                                <span>Flat 15% off</span>
+                                <a href="#" class="btn">Shop Now ></a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="nav-sub-link-box">
+                        <div class="sub-link-name flex" data-product-btn>
+                            <div class="link-name">
+                               <p>Women's:</p>
+                            </div>
+                            <div class="link-icon">
+                                <span class="active"><i class='bx bx-plus' ></i></span>
+                                <span class="disable"><i class='bx bx-minus'></i></span>
+                            </div>
+                        </div>
+                        <div class="sub-link-box" data-stock-product>
+                        <div class="sub-link">
+                            <a href="#"> Formal</a>
+                            <a href="#">Casual</a>
+                            <a href="#">Cosmetics</a>
+                            <a href="#">Perfume</a>
+                            <a href="#">Bags</a>
+                        </div>
+                        <div class="sub-product flex">
+                            <div class="img">
+                                <img src="../../images/women.png" alt="">
+                            </div>
+                            <div class="txt">
+                                <h6>Women's</h6>
+                                <p>Fashion</p>
+                                <span>Flat 15% off</span>
+                                <a href="#" class="btn">Shop Now ></a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="nav-sub-link-box">
+                        <div class="sub-link-name flex" data-product-btn>
+                            <div class="link-name">
+                               <p>Electronics:</p>
+                            </div>
+                            <div class="link-icon">
+                                <span class="active"><i class='bx bx-plus' ></i></span>
+                                <span class="disable"><i class='bx bx-minus'></i></span>
+                            </div>
+                        </div>
+                        <div class="sub-link-box" data-stock-product>
+                        <div class="sub-link">
+                            <a href="#">Desktop</a>
+                            <a href="#">Camera</a>
+                            <a href="#">Tablet</a>
+                            <a href="#">Mouse</a>
+                            <a href="#">Keyboard</a>
+                        </div>
+                        <div class="sub-product flex">
+                            <div class="img">
+                                <img src="../../images/mouse.png" alt="">
+                            </div>
+                            <div class="txt">
+                                <h6>Mouse</h6>
+                                <p>Collection</p>
+                                <span>Flat 15% off</span>
+                                <a href="#" class="btn">Shop Now ></a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link flex" data-toggle-btn><span>men's</span>
+                        <span class="nav-link-arrow"><i class='bx bx-chevron-down'></i></span></a>
+                    <div class="nav-sub-link-other-box" data-toggle-menu>
+                        <div class="sub-link-name flex" data-product-btn>
+                            <div class="link-name">
+                               <p>Men's:</p>
+                            </div>
+                            <div class="link-icon">
+                                <span class="active"><i class='bx bx-plus' ></i></span>
+                                <span class="disable"><i class='bx bx-minus'></i></span>
+                            </div>
+                        </div>
+                        <div class="sub-link other-sub-link" data-stock-product>
+                            <a href="#">Blazers</a>
+                            <a href="#">T-Shirts</a>
+                            <a href="#">Skirts</a>
+                            <a href="#">Suits</a>
+                            <a href="#">Dresses</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link flex" data-toggle-btn><span>women's</span>
+                        <span class="nav-link-arrow"><i class='bx bx-chevron-down'></i></span></a>
+                    <div class="nav-sub-link-other-box" data-toggle-menu>
+                        <div class="sub-link-name flex" data-product-btn>
+                            <div class="link-name">
+                               <p>Women's:</p>
+                            </div>
+                            <div class="link-icon">
+                                <span class="active"><i class='bx bx-plus' ></i></span>
+                                <span class="disable"><i class='bx bx-minus'></i></span>
+                            </div>
+                        </div>
+                        <div class="sub-link other-sub-link" data-stock-product>
+                            <a href="#">Blazers</a>
+                            <a href="#">T-Shirts</a>
+                            <a href="#">Skirts</a>
+                            <a href="#">Suits</a>
+                            <a href="#">Dresses</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link flex" data-product-btn><span>blog</span>
+                        <span class="nav-link-arrow"><i class='bx bx-chevron-down'></i></span></a>
+                    <div class="page-link" data-stock-product>
+                        <a href="../blog/blog-1/blog.html">Blog-1</a>
+                        <a href="../blog/blog-2/blog-2.html">Blog-2</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="../About/about-us.html" class="nav-link"><span>about us</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active"><span>contact us</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="../faq/faq.html" class="nav-link"><span>faq's</span></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<!-- =======mobile-navigation======= -->
+<div class="mobile-navigation flex">
+    <a href="##"><span data-nav-open-btn><i class='bx bx-menu' ></i></span></a>
+    <a href="#"><span><i class='bx bx-shopping-bag' ></i><small>0</small></span></a>
+    <a href="#body"><span><i class='bx bx-home' ></i></span></a>
+    <a href="../login/login.html"><span><i class='bx bx-user'></i></span></a>
+    <a href="##"><span data-nav-open-btn><i class='bx bx-grid-alt' ></i></span></a>
+</div>
+
+    <section id="contact">
+        <div class="contact_banner">
+            <div class="contact_overlay">
+            </div>
+        </div>
+        <div class="contact_box">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="customertalk">
+                        <h4>We would love to talk with our great customer</h4>
+                        <p>Give us a call or drop by anytime, we endeavour to answer all enquiries within 24 hours on business days.</p>
+                       <p class="mb">Email: info@domain.com</p>
+                       <p>Phone: + 1-800-222-000</p>
+                       <h2>Customer</h2>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="forms">
+                        <h3>FILL OUT THE FORM AND WE'LL GET BACK SOON!</h3>
+                        <input type="text" placeholder="Name*" class="editbox">
+                        <input type="email" placeholder="E-mail*"class="editbox">
+                        <input type="text" placeholder="Subject"class="editbox">
+                        <textarea placeholder=" Your Message" class="editbox" rows="3"></textarea>
+                        <button type="submit">Send Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blue">
+            <blockquote class="quated"><h3>I love fashion</h3>
+            <h6>I've created a vocabulary of different styles. I draw from many different ways to ake a picture. Sometimes I go back to reportage, to journalism.
+            </h6></blockquote>
+            <p>- JOHN GRANT</p>
+        </div>
+        <div class="container other-container">
+            <div class="row">
+                <div class="col-sm-12 col-md-9 col-lg-9 ">
+                    <div class="twentyfour">
+                        <p>we endeavour to answer all enquiries within<span>24 hours on business days.</span></p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3"><button class="support">SUPPORT NOW</button></div>
+            </div>
+        </div>
+    </section>
+
+<!-- =====social-and-cetagorie-link===== -->
+<div class="social-and-cetagorie-link">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-3 col-lg-3">
+                <h4>BE IN TOUCH WITH US:</h4>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="mail flex">
+                    <input type="email" placeholder="Enter Your Email">
+                    <button><i class='bx bx-paper-plane' ></i></button>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3">
+                <div class="social-link">
+                    <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    <a href="#"><i class='bx bxl-dribbble' ></i></a>
+                    <a href="#"><i class='bx bxl-pinterest' ></i></a>
+                </div>
+            </div>
+        </div>
+        <h5 class="footer-cetagorie-link"><span>Cetagorie:  </span>Apple │ Apple Watch │ Beats │ Camera │ Game Controller │ HD │ HTC │ 
+  HTC One │ IMac │ Ipad │ Ipad 4 16Gb │ Ipad Mini │ Keyboard │ Lenovo │ M8 │ Mackbook Pro M1 │ Mouse │ Samsung │ Samsung Galaxy M11 │ 
+  Samsung Galaxy M31 │ Samsung Galaxy S5 - 64gb │ Samsung Galaxy Tab 4 │ Wireless Speaker
+            </h5>
+    </div>
+  </div>
+  
+  <!-- =====footer-section===== -->
+  <footer>
+    <div class="container main-container">
+        <div class="row justify-content-between">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="footer-address-part">
+                    <h4 class="footer-title">Contact Us</h4>
+  
+                    <div class="phone flex">
+                        <a href="#" class="icon"><i class='bx bx-location-plus' ></i></a>
+                        <p>11100956 Wall Street Washington DC, USA</p>
+                    </div>
+                    <div class="email flex">
+                        <a href="#" class="icon"><i class='bx bx-envelope' ></i></a>
+                        <p>contact@company.com We reply within 24 hours</p>
+                    </div>
+                    <div class="location flex">
+                        <a href="#" class="icon"><i class='bx bx-phone-call'></i></a>
+                        <p> (+84) 0123 456 789 Mon-Fri, 9am until 6pm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+                <div class="footer-account-part">
+                    <h4 class="footer-title">Account</h4>
+                    <a href="#">Shop</a>
+                    <a href="#">Cart</a>
+                    <a href="#">Checkout</a>
+                    <a href="#">My Account</a>
+                    <a href="#">Trems & Conditions</a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="footer-information-part">
+                    <h4 class="footer-title">Information</h4>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Blog</a>
+                    <a href="#">FAQ's</a>
+                    <a href="#">Typrography</a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+                <div class="footer-buy-part">
+                    <h4 class="footer-title">How To Buy</h4>
+                    <a href="#">Making Payments</a>
+                    <a href="#">Delivery Options</a>
+                    <a href="#">Buyer Protection</a>
+                    <a href="#">New User Guide</a>
+                    <a href="#">Partner Ship</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <!-- =====footer-copy===== -->
+    <div class="footer-copy">
+        <div class="container flex">
+            <div class="footer-copy-text">© 2020 Made with ZooTemplate. All Rights Reserved.</div>
+            <div class="footer-copy-img"><img src="../../images/cards.png" alt=""></div>
+        </div>
+    </div>
+    <a href="#body" id="scroll-up" data-scroll><i class='bx bxs-chevron-up'></i></a>
+  </footer>
+  <!-- =====modal===== -->
+  <div class="fixed-display" data-overlay></div>
+
+
+<!-- =======link-boxicon-js======= -->
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<!-- =======link-custom-js======= -->
+<script src="../../js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+@media screen and (max-width:992px){
+    .left_side_part{
+        position: fixed;
+        top:0;
+        left:-90%;
+        width: 75%;
+        height: 100vh;
+        overflow-y: scroll;
+        padding-bottom:70px;
+        z-index: 30;
+        transition: var(--smooth);
+    }
+    .left_side_part.active{
+        left:0;
+    }
+    .img_part picture img{
+
+        height:auto !important;
+    }
+    }
+
+/* Small devices  */
+@media (min-width: 576px) and (max-width: 992px) { 
+    .blog_txt h3{
+        line-height: 27px;
+        font-size: 24px;
+    }
+    .left_side_part{
+        width: 40%;
+    }
+ }
+
+/* Extra small devices  */
+@media (min-width: 320px) and (max-width: 575.98px) { 
+    .blog_txt h3{
+        line-height: 27px;
+        font-size: 24px;
+    }
+
+    .blog_btn a{
+        font-size: 14px;
+        padding:12px 18px;
+        border-radius: 10px;
+    }
+}

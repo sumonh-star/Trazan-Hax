@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-home{
+    width:100%;
+    height: 100vh;
+    background: linear-gradient(45deg,rgba(188, 110, 110, 0.7),rgba(82, 197, 25, 0.8)), url('../images/shop-2.jpg');
+    position: relative;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    object-fit: cover;
+}
+.main-home::after{
+    content: '';
+    position: absolute;
+    width: 24%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+    top:-200px;
+    left:22%;
+    transition: .6s;
+}
+.main-home.active::after{
+    width: 50%;
+    height: 100vh;
+    left:0;
+    top:0;
+    background-color: var(--title-color);
+    z-index: 4;
+}
+.main-home::before{
+    content: '';
+    position: absolute;
+    width: 24%;
+    height: 400px;
+    background-color: rgba(75, 222, 230, 0.626);
+    bottom:-250px;
+    right:15%;
+    transition: .6s;
+}
+.main-home.active::before{
+    width: 50%;
+    height: 100vh;
+    bottom:0;
+    right:0;
+    background-color: var(--title-color);
+    z-index: 4;
+}
+/* ====nav-menu==== */
+.nav-menu{
+    padding-top: var(--mb-10);
+}
+.nav-menu .logo img{
+    width: 150px;
+    transform: scale(1);
+    transform-origin: left;
+    transition: var(--smooth);
+}
+.nav-menu nav ul{
+    display: flex;
+    transform: scale(1);
+    transform-origin: right;
+    transition: var(--smooth);
+}
+.nav-menu nav ul li a{
+    font-size: var(--normal-font);
+    color:var(--title-color);
+    font-weight: var(--font-midume);
+    position: relative;
+}
+.nav-menu nav ul li a::before{
+    content:'';
+    position: absolute;
+    width:0;
+    height: 3px;
+    background-color: var(--title-color);
+    right:0;
+    bottom:-7px;
+    border-radius: var(--border-radius-md);
+    transition: var(--smooth);
+}
+.nav-menu nav ul li a:hover::before{
+    width: var(--max-size);
+}
+
+/* ====social-menu===== */
+.social-menu{
+    position: absolute;
+    width: 60px;
+    height: 100vh;
+    border-right: 2px solid var(--title-color);
+    top:0;
+    left:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding:30px 0;
+}
+.menu-btn{
+    cursor: pointer;
+    z-index: 5;
+}
+.menu-btn span{
+    width: 40px;
+    height: 3px;
+    background-color: var(--title-color);
+    display: block;
+    margin-bottom: 9px;
+    transition: var(--smooth);
+}
+.main-home.active .menu-btn .line-1{
+    transform:translateX(3px) rotate(40deg);
+    transform-origin: left;
+    background-color: var(--body-color);
+}
+.main-home.active .menu-btn .line-2{
+    transform: rotate(-50deg);
+    transform-origin: bottom;
+    background-color: var(--body-color);
+}
+.social-link{
+    gap:20px;
+    transform: rotate(90deg) scale(1);
+    margin-bottom: 150px;
+    transition: var(--smooth);
+}
+.social-link a{
+    color:var(--title-color);
+    font-weight: var(--font-midume);
+    font-size: var(--normal-font);
+    transition: var(--smooth);
+}
+.social-link a:hover{
+    color:var(--body-color)
+}
+.main-home-content{
+    margin-top: 250px;
+    transform: scale(1);
+    transform-origin: left;
+    transition: var(--smooth);
+}
+.main-home-content h1{
+    font-size: 60px;
+    font-weight: var(--font-bold);
+    color:var(--title-color);
+    margin-bottom: var(--mb-20);
+}
+.main-home-content .btn{
+    background-color: var(--title-color);
+    color:var(--body-color);
+    padding:10px 20px;
+    border-radius: var(--border-radius-sm);
+    border: 1px solid var(--title-color);
+    transition: var(--smooth);
+    font-size:var(--normal-font);
+    font-weight: var(--font-midume);
+}
+.main-home-content .btn:hover{
+    background-color: transparent;
+    color:var(--title-color);
+}
+
+/* ====main-home-shoes==== */
+.main-home-shoes{
+    position: absolute;
+    max-width: 450px;
+    top:20%;
+    right:20%;
+    transform: rotate(5deg) scale(1);
+    z-index: 2;
+    animation: shoes-anim 8s ease-in-out infinite;
+    transform-origin: right;
+    transition: var(--smooth);
+    pointer-events: none;
+}
+.main-home-shoes::before{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 70px;
+    background-color: var(--title-color);
+    bottom:-100px;
+    right:0;
+    filter: blur(30px);
+    animation: shoes-shadow 8s ease-in-out infinite;
+}
+@keyframes shoes-shadow{
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.7);
+    }
+}
+@keyframes shoes-anim{
+    0%,100%{
+        transform: translateY(0) rotate(0);
+    }
+    50%{
+        transform: translateY(-40px) rotate(4deg);
+    }
+}
+
+/* =======when nav-active===== */
+.main-home.active .nav-menu .logo img{
+    transform: scale(0);
+}
+.main-home.active .nav-menu nav ul{
+    transform: scale(0);
+}
+.main-home.active .social-link{
+    transform: scale(0);
+}
+.main-home.active .main-home-content{
+    transform: scale(0);
+}
+.main-home.active .main-home-shoes{
+    transform:rotate(0) scale(0);
+}
+
+/* =====main-home-other-link===== */
+.main-home-other-link{
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    text-align: center;
+    transition: var(--smooth);
+    transition-delay: 1s;
+    width: 300px;
+    text-align: center;
+}
+.main-home-other-link a{
+    font-size: var(--normal-font);
+    color:var(--body-color);
+    margin-top: var(--mb-20);
+    display: block;
+    font-weight: var(--font-midume);
+    transition:.1s;
+    transform: scale(0);
+    transition-delay: .5s;
+}
+.main-home-other-link a span{
+    transition: var(--smooth);
+}
+.main-home-other-link a span:hover{
+    color:var(--hover-color);
+}
+.main-home.active .main-home-other-link a{
+    transform: scale(1);
+}
+.btn-2 span{
+    color:var(--body-color) !important;
+    background-color: transparent;
+    border: 1px solid var(--body-color);
+    font-weight: var(--font-midume);
+    transition: var(--smooth);
+    padding:10px 20px;
+    border-radius: var(--border-radius-sm);
+}
+.btn-2 span:hover{
+    background-color: var(--body-color);
+    color:var(--title-color) !important;
+    border: 1px solid var(--body-color);
+    
+}

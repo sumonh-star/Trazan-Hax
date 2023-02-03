@@ -1,0 +1,111 @@
+
+/* Extra large devices  */
+@media (min-width: 1200px) { 
+    /* About_us_part_start */
+    .about_tittle p {
+        line-height: 23px;
+    }
+      /* About_us_part_end */
+ }
+
+/* Large devices  */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    /* About_us_part_start */
+      /* About_us_part_end */
+ }
+
+/* Medium devices  */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+.experience-text h2{
+    font-size: var(--big-font);
+  }
+  .experience-text p{
+    font-size: var(--small-font);
+  }
+  .store-wrapper{
+    gap:25px;
+  }
+
+
+
+
+
+
+  /* =====about-faq-section====== */
+  .about_box {
+    margin-left:10px;
+}
+}
+
+
+
+/* Small devices  */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    /* ====banner-section===== */
+.banner-section{
+    height: 300px;
+}
+
+/* =====about-experience-section======== */
+.about-experience-section{
+    margin-bottom: 30px;
+    text-align: center;
+  }
+.experience-image{
+    max-width: 400px;
+    margin: auto;
+    margin-bottom:70px;
+}
+.store-slide{
+  min-width: 45%;
+}
+  /* ====about-faq-section==== */
+.about_box {
+    margin-left: 0px;
+}
+ }
+
+
+
+/* =====Extra small devices======*/
+@media screen and (max-width: 575.98px) { 
+/* ====banner-section===== */
+.banner-section{
+    height: 300px;
+}
+
+/* =====about-experience-section======== */
+.about-experience-section{
+    margin-bottom: 30px;
+    text-align: center;
+  }
+.experience-image{
+    max-width: 350px;
+    margin: auto;
+    margin-bottom:70px;
+}
+.experience-count{
+    left:-4%;
+}
+.experience-text p{
+    font-size: var(--normal-font);
+  }
+  
+/* =====store-section====== */
+.store-section p{
+    font-size: var(--normal-font);
+    margin-bottom: 0px;
+  }
+  .store-wrapper{
+    margin-top: 50px;
+  }
+  .store-slide{
+    min-width: 100%;
+  }
+
+/* ====about-faq-section====== */
+    
+ .about_box {
+     margin: auto;
+ }
+ }
